@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sara's portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Inspiration&family=Josefin+Sans:wght@300&family=Montserrat:wght@100&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+<body>
+    <div class="container" id="home">
+        <div class="navbar">
+        <div class="logo"><h1>S.H</h1></div>    
+            <nav>
+                <ul class="menubar" id="menuList">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    
+                    <li><a href="#contact">Contact</a></li>
+                    
+                </ul>
+            </nav>
+            <img src="img/bars-solid.svg" class="icon" alt="" onclick="togglemenu()">
+        </div>
+        <div class="row">
+            
+            <div class="col-1">
+                <h2>Hey there,<br>I'm Sara Hailu <br>let's get started</h2>
+               
+                <div class="cir2"><svg width="273" height="190" viewBox="0 0 273 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="186.5" cy="108" rx="86.5" ry="82" fill="#485751"/>
+                    <path d="M187 85.5C187 132.72 145.139 171 93.5 171C41.8614 171 0 132.72 0 85.5C0 38.2797 41.8614 0 93.5 0C145.139 0 187 38.2797 187 85.5Z" fill="#A4C4B6"/>
+                    </svg>
+                    </div>
+              
+            
+            </div> 
+            <div class="col-2">
+                <img src="img/photo_2022-03-06_00-05-37.jpg" class="img" alt="img">
+               <div class="cir1"><svg width="274" height="192" viewBox="0 0 274 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="86.5" cy="110" rx="86.5" ry="82" fill="#485751"/>
+                <path d="M274 85.5C274 132.72 232.139 171 180.5 171C128.861 171 87 132.72 87 85.5C87 38.2797 128.861 0 180.5 0C232.139 0 274 38.2797 274 85.5Z" fill="#A4C4B6"/>
+                </svg>
+                
+                </div>
+                
+                  
+            </div>
+        </div>
+    </div>
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "130px";
+            }
+            else
+                {
+                    menuList.style.maxHeight = "0px";
+                }
+        }
+
+    </script>
+
+
+
+ <!-- about section start -->
+ <section class="about" id="about">
+    <div class="max-width">
+        <div class="cir3"></div>
+    <div class="cir4"></div>
+    <div class="coll">
+    <div class="lt">
+        
+        <h1 class="title">About me</h1>
+        <p class="info">My name is Sara Hailu,I'm a computer Science and engineering student at Adama Science And Technology
+            University.I'm currently 3rd and a half year student.</p>
+        </div>
+        <div class="tr">
+            <h1 class="title">Education</h1>
+            <p class="info">I learned from elementary school upto 9 & 10th grades in Alpha Keranyo Primary and Secondary school,then  I got in Nativity Girl's School for 11th and 12th grade. </p>
+        </div>
+        <div class="bc">
+            <h1 class="title">Hobbies</h1>
+            <p class="info">I love cooking ,hanging out with friends and spending time with my family. </p>
+        </div>
+    </div>
+    </div>
+</section>
+
+
+<!-- skills section start -->
+<section class="skills" id="skills">
+    <div class="max-width">
+        <h2 class="title">My skills</h2>
+        <div class="skills-content">
+            
+            <div class="column right">
+                <div class="bars">
+                    <div class="info">
+                        <span>HTML</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="line html"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>CSS</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="line css"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>JavaScript</span>
+                        <span>50%</span>
+                    </div>
+                    <div class="line js"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>PHP</span>
+                        <span>40%</span>
+                    </div>
+                    <div class="line php"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>MySQL</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="line mysql"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- contact section start -->
+<section class="contact" id="contact">
+    <div class="max-width">
+        <h2 class="title">Contact me</h2>
+        <div class="contact-content">
+            
+            <div class="right">
+                <div class="text">Message me</div>
+                <form action="#">
+                    <div class="fields">
+                        <div class="field name">
+                            <input type="text" placeholder="Name" required>
+                        </div>
+                        <div class="field email">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="field textarea">
+                        <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                    </div>
+                    <div class="button-area">
+                        <button type="submit">Send message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- footer section start -->
+<footer>
+    <a href="https://www.instagram.com/sara_hailu_gebre/"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://twitter.com/Saraby_h"><i class="fa-brands fa-twitter"></i></a>
+    <a href="@saraby_ha"><i class="fa-brands fa-telegram"></i></a>
+    <span>Created By <a href="#home">SaraHailu</a> | <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
+</footer>
+</body>
+</html>
